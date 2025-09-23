@@ -1,0 +1,30 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "title": "BRMP Customer Service AI Chatbot",
+            "description": "A rule-based chatbot project built to increase efficiency and help improve customer service by answering their questions 24 hours a day.",
+            "date": "August 2025",
+            "technologies": ["HTML", "CSS", "JavaScript", "Python", "Tailwind CSS", "Flask", "NLP", "Keras", "NLTK"],
+            "category": "Website",
+            "thumbnail": "proyek2.png",
+            "details": "<p>This project focuses on the design and implementation of an AI chatbot that functions as a virtual assistant for customer service at the BRMP Penerapan of the Indonesian Ministry of Agriculture. Its primary objective is to deliver a digital solution capable of providing information and answering visitor inquiries instantly and accurately, 24/7, without requiring human intervention.</p><br><p>The chatbot is designed with a rule-based approach, where its intelligence stems not from a complex machine learning model, but from a series of predefined rules. Its functionality is based on a pattern-matching system where each potential user query (pattern) is manually mapped to a relevant and structured answer (response). This entire knowledge base is stored in a JSON file, which allows for easy updates and maintenance by an administrator.</p><br><p>The application is built with a modern tech stack. On the backend, the system utilizes the Python programming language with the lightweight and efficient Flask micro-framework to handle logic and user requests. To process and understand text input, the project leverages Natural Language Processing (NLP) libraries like NLTK and Keras. Meanwhile, the user interface (UI) for visitor interaction is developed using HTML, CSS, and JavaScript, and is styled with the Tailwind CSS framework to ensure a clean, modern, and responsive experience across various devices.</p><br><p>Overall, this chatbot project represents a strategic initiative to improve the efficiency and quality of public services at the Ministry of Agriculture. This solution makes essential information accessible to the public at any time, reduces the workload of customer service staff by handling Frequently Asked Questions (FAQs), and ensures consistency and accuracy in the information provided.</p>",
+            "dataset": "This project does not use datasets.",
+            "reference": "This project does not use references.",
+            "project_url": "https://example.com/fraud-detection"
+        },
+        {
+            "id": "2",
+            "title": "Rafli's Personal Portfolio Web",
+            "description": "A personal portfolio website that I created to build branding, display my resume, and showcase the projects I have built so that people can see them.",
+            "date": "September 2025",
+            "technologies": ["HTML", "CSS", "JavaScript", "Python", "Tailwind CSS", "Flask", "NLP", "Keras", "NLTK"],
+            "category": "Website",
+            "thumbnail": "proyek1.png",
+            "details": "<p>As a data and AI practitioner, I built this portfolio as an interactive digital platform to showcase the various projects I have built, while also representing my professional journey and technical capabilities. This project was developed from the ground up as a full-stack application to demonstrate my ability to design, build, and manage functional and intelligent web applications.</p><br><p>Built with a full-stack architecture, the front-end utilizes HTML, JavaScript, and Tailwind CSS, while the back-end is powered by Python and Flask. The platform presents a comprehensive professional profile, featuring my educational background, work experience, skillset, and contact information.</p><br><p>Its flagship feature is an interactive AI Chatbot which I developed to answer questions about my profile automatically, providing a more dynamic user experience. This feature is powered by Natural Language Processing (NLP) techniques using NLTK and a machine learning model trained with Keras to deliver relevant answers.</p><br><p>Ultimately, this project serves as a case study demonstrating my capabilities in the end-to-end development cycle: from UI/UX design and back-end engineering to the integration of an AI model into a real-world application.</p>",
+            "dataset": "This project does not use datasets.",
+            "reference": "This project does not use references.",
+            "project_url": "https://example.com/fraud-detection"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "certifications": [
+        {
+            "name": "Certificate Of Competence Network Engineering Assesment",
+            "issuer": "SMK Negeri 2 Bogor",
+            "date": "June 2022",
+            "expiration": "No Expiration",
+            "credential_id": "3688/A/CRT/BNT/UKK/VI/2022",
+            "credential_url": "https://smkn2bogor.sch.id/"
+        },
+        {
+            "name": "Learn the Basics of Data Science",
+            "issuer": "Dicoding Indonesia",
+            "date": "October 2024",
+            "expiration": "October 2027",
+            "credential_id": "98XW5LO49PM3",
+            "credential_url": "https://www.dicoding.com/certificates/98XW5LO49PM3"
+        },
+        {
+            "name": "Kickstart Data Science Journey",
+            "issuer": "Rakamin Academy",
+            "date": "December 2024",
+            "expiration": "No Expiration",
+            "credential_id": "329152DATA_SCIENCE1122024-EG",
+            "credential_url": "https://drive.google.com/file/d/1-cdQdrj7Ku_s492J1EWXHEpNLOZV1TaG/view"
+        },
+        {
+            "name": "Python Fundamental for Data Science",
+            "issuer": "DQLab",
+            "date": "May 2025",
+            "expiration": "No Expiration",
+            "credential_id": "DQLABINTP1RDTWKK",
+            "credential_url": "https://academy.dqlab.id/Certificate_check/result/DQLABINTP1RDTWKK#mycertificate"
+        },
+        {
+            "name": "Problem Solving (Basic)",
+            "issuer": "HackerRank",
+            "date": "May 2025",
+            "expiration": "No Expiration",
+            "credential_id": "677D51287D8D",
+            "credential_url": "https://www.hackerrank.com/certificates/677d51287d8d"
+        }
+    ]
+}

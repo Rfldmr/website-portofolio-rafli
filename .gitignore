@@ -1,0 +1,31 @@
+# Folder virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# File environment variables
+.env
+.env.*
+!.env.example
+
+# File cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Folder instance Flask (sering berisi database atau file config)
+instance/
+
+# File database SQLite
+*.sqlite3
+*.db
+
+# File yang dihasilkan oleh IDE
+.vscode/
+.idea/
+
+# File sistem operasi
+.DS_Store
+Thumbs.db

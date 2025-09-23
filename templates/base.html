@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafli Damara | Portfolio</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/profile-no-bg-1.png') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E45A92',
+                        secondary: '#2c2b2bff',
+                        dark: {
+                            100: '#1F2937',
+                            200: '#111827',
+                            300: '#0F172A'
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-dark-300 text-gray-200 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-dark-200 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl text-primary"><b>RAFLIDMR.</b> | <i>#WORKWITHRAFLI</i></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="hover:text-primary transition">Home</a>
+                    <a href="#education" class="hover:text-primary transition">Education</a>
+                    <a href="#experience" class="hover:text-primary transition">Experience</a>
+                    <a href="#certifications" class="hover:text-primary transition">Certifications</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact Me</a>
+                    <a href="/projects" class="bg-primary px-4 py-2 rounded hover:bg-[#c5356f] transition">All Projects</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-200">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="/" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-dark-100 transition">Home</a>
+        <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-dark-100 transition">Education</a>
+        <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-dark-100 transition">Experience</a>
+        <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-dark-100 transition">Certifications</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:text-primary hover:bg-dark-100 transition">Contact Me</a>
+        <a href="/projects" class="block mt-2 bg-primary px-3 py-2 rounded-md text-base font-medium hover:bg-[#a10072] transition">All Projects</a>
+    </div>
+</div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-200 py-8 mt-0">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-600">
+            <p>&copy; 2025 Rafli Damara. All rights reserved.</p>
+            
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

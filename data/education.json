@@ -1,0 +1,18 @@
+{
+    "education": [
+        {
+            "degree": "Bachelor of Applied Science in Software Engineering",
+            "institution": "IPB University Vocational School",
+            "period": "2022 - Now",
+            "description": "I continued my studies to higher education at the IPB University Vocational School, taking the Software Engineering Technology study program to develop my skills in the field of software development.",
+            "achievements": ["Finalist of the BMC Competition X-Project 9.0 (National Level)", "2nd winner of AISCOMP 2023 (National Level)"]
+        },
+        {
+            "degree": "Computer Network Engineering",
+            "institution": "SMK Negeri 2 Bogor",
+            "period": "2019 - 2022",
+            "description": "I completed my vocational education at SMK Negeri 2 Bogor, earning a major in Computer Network Engineering and Telecommunications, thereby enhancing my expertise in information and communication technology.",
+            "achievements": ["2nd highest average final report card grade.", "Passed the final computer network competency test."]
+        }
+    ]
+}

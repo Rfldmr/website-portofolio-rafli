@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <a href="/projects" class="text-primary hover:underline flex items-center mb-8">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+            </a>
+            
+            <h1 class="text-4xl font-bold mb-4">{{ project.title }}</h1>
+            <p class="text-gray-400 mb-6">Created: {{ project.date }}</p>
+            
+            <div class="mb-8 rounded-lg overflow-hidden shadow-lg">
+                <div class="aspect-video w-full">
+                    {% if project.thumbnail %}
+                        <img src="{{ url_for('static', filename='img/projects/' + project.thumbnail) }}" 
+                             alt="Thumbnail for {{ project.title }}" 
+                             class="h-full w-full object-cover">
+                    {% else %}
+                        <div class="h-full w-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                            <i class="fas fa-image text-6xl text-white"></i>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="md:col-span-2 order-2 md:order-1">
+                    <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+                    <p class="mb-6">{{ project.description }}</p>
+                    
+                    <h2 class="text-2xl font-bold mb-4">Project Details</h2>
+                    <div class="prose prose-invert mb-6">
+                        {{ project.details|safe }}
+                    </div>
+
+                    <h2 class="text-2xl font-bold mb-4">Dataset</h2>
+                    <div class="prose prose-invert mb-6">
+                        {{ project.dataset|safe }}
+                    </div>
+
+                    <h2 class="text-2xl font-bold mb-4">Reference</h2>
+                    <div class="prose prose-invert">
+                        {{ project.reference|safe }}
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <div class="bg-dark-200 p-6 rounded-lg md:sticky top-24">
+                        <h3 class="text-xl font-bold mb-4">Project Information</h3>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2">Tech Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                {% for tech in project.technologies %}
+                                <span class="border border-white bg-dark-300 px-3 py-1 rounded-full text-sm text-white">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2">Category</h4>
+                            <p>{{ project.category }}</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-2">Date</h4>
+                            <p>{{ project.date }}</p>
+                        </div>
+                        
+                        {% if project.project_url %}
+                        <div>
+                            <h4 class="font-semibold mb-2">Project Link</h4>
+                            <a href="{{ project.project_url }}" target="_blank" class="text-primary hover:underline">View Live Project</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+{% endblock %}

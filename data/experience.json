@@ -1,0 +1,32 @@
+{
+    "experience": [
+        {
+            "position": "Python Programming Tutor",
+            "company": "Madrasah Istiqlal Jakarta",
+            "period": "Aug 2025 -  Now",
+            "description": "Teaching high school students the Python programming language through a tailored syllabus and self-contained learning modules designed to prepare them for national programming competitions.",
+            "technologies": ["Python", "Streamlit", "Machine Learning", "Teaching", "Public Speaking", "Communications"]
+        },
+        {
+            "position": " Assistant Lecturer",
+            "company": "IPB University Vocational School",
+            "period": "Aug 2025 -  Now",
+            "description": "Facilitated learning by attending lectures, monitoring and guiding students during discussions and labs, and preparing all necessary teaching and lab equipment.",
+            "technologies": ["Python","Data Analytics", "Machine Learning", "Public Speaking", "Teaching", "MS. Office"]
+        },
+        {
+            "position": "Data Scientist Intern",
+            "company": "BRMP Penerapan Kementerian Pertanian RI",
+            "period": "Jul 2025 - Dec 2025",
+            "description": "Collecting, cleaning, and processing multi-source data to build and evaluate machine learning models that support the development of data-driven solutions for agricultural efficiency and development.",
+            "technologies": ["Python", "Flask", "NLP", "LLM", "Machine Learning", "Data Visualization", "Data Analytics"]
+        },
+        {
+            "position": "Data Science Mentor",
+            "company": "NextSkill Indonesia",
+            "period": "May 2025 - Aug 2025",
+            "description": "Serving as a speaker and mentor at the NextSkill Data Science Bootcamp, where I guide vocational high school students in fundamental data science concepts, answer their questions, and provide technical support.",
+            "technologies": ["Python", "Machine Learning", "Data Science", "AI", "Public Speaking", "Teaching"]
+        }
+    ]
+}
