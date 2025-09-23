@@ -1,408 +1,220 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <!-- Hero Section -->
     <section id="home" class="h-screen flex items-center justify-center text-center relative overflow-hidden px-4">
-    
-    <div class="absolute inset-0 flex items-center justify-center">
-        <div class="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-pulse-slow"></div>
-    </div>
-
-    <div class="relative z-10">
-        <h1 class="text-5xl md:text-7xl font-bold mb-4">
-            Hello, I'm <br class="md:hidden"> <span id="typed-text" class="text-primary"></span>
-        </h1>
-        <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
-            An software engineering kid with a keen interest in machine learning, artificial intelligence, and data analytics.
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#projects" class="w-full sm:w-auto bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-[#c5356f] transition">
-                View My Work
-            </a>
-            <a href="{{ url_for('static', filename='files/Rafli_Damara_CV.pdf') }}" download="Rafli Damara - CV" class="w-full sm:w-auto border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
-                Download CV
-            </a>
+        <div class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+            <div class="absolute w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
         </div>
-    </div>
-</section>
-
-    <!-- Stats Section -->
-    <section id="stats" class="py-12 bg-dark-200 section-intro">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div>
-            <p class="text-5xl font-bold text-primary mb-2 counter" data-target="2">0</p>
-            <p class="text-gray-400">Years of Experience</p>
-        </div>
-        <div>
-            <p class="text-5xl font-bold text-primary mb-2 counter" data-target="10">0</p>
-            <p class="text-gray-400">Completed Projects</p>
-        </div>
-        <div>
-            <p class="text-5xl font-bold text-primary mb-2 counter" data-target="3">0</p>
-            <p class="text-gray-400">Awards Winning</p>
-        </div>
-    </div>
-</section>
-
-   <!-- Skills Section -->
-<section id="skills" class="py-20 px-4 section-intro">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-center">Tech Stack & Skills</h2>
-        <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-
-            <!-- Front End -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-laptop-code text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Front End</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">HTML</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">CSS</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">JavaScript</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Bootstrap</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Streamlit</span>
-                </div>
-            </div>
-            
-            <!-- Back End -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-code text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Back End</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">SQL</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Python</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Flask</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Django</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">FastAPI</span>
-                </div>
-            </div>
-
-
-            <!-- Database -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-database text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Database</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">MySQL</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">PostgreSQL</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">MongoDB</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">SQLite</span>
-                </div>
-            </div>
-
-            <!-- Data Science -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-robot text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Data Science & AI/ML</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">TensorFlow</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">PyTorch</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Pandas</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">NumPy</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Scikit-learn</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">R</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Keras</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">NLP</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">LLMs</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">RAG</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">MLflow</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Computer Vision</span>
-                    
-                </div>
-            </div>
-
-            <!-- Visualization -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-chart-bar text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Visualization</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Tableau</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Google Looker Studio</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">PowerBI</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Matplotlib</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Seaborn</span>
-                </div>
-            </div>
-
-
-
-            <!-- Other -->
-            <div class="border border-primary bg-dark-300 rounded-xl p-6 transition-all duration-300">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-wrench text-2xl text-primary mr-3"></i>
-                    <h4 class="text-xl font-semibold text-primary">Other Tools</h4>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">GitHub</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Git</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Spark</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">AWS</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Docker</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Hugging Face</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Azure</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Google Cloud Platform</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Canva</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">Figma</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">CapCut</span>
-                    <span class="border border-white bg-dark-200 bg-opacity-10 text-white px-3 py-1 rounded-full text-sm">MS. Office</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-     <!-- Education Section -->
-    <section id="education" class="py-20 px-4 section-intro">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-center">Education</h2>
-            <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
-            <div class="space-y-12">
-                {% for edu in education %}
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="md:col-span-1">
-                        <p class="text-gray-400">{{ edu.period }}</p>
-                    </div>
-                    <div class="md:col-span-3">
-                        <h3 class="text-xl font-bold text-primary">{{ edu.degree }}</h3>
-                        <p class="text-lg font-semibold">{{ edu.institution }}
-                        <p class="mt-4">{{ edu.description }}</p>
-                        
-                        {% if edu.achievements %}
-                        <div class="mt-4">
-                            <h4 class="font-semibold mb-2">Achievements:</h4>
-                            <ul class="list-disc list-inside">
-                                {% for achievement in edu.achievements %}
-                                <li>{{ achievement }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-                {% endfor %}
+        <div class="relative z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+                Hello, I'm <br class="md:hidden"> <span id="typed-text" class="text-primary"></span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                A Software Engineering student with a keen interest in machine learning, artificial intelligence, and data analytics.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary/80 transition-colors duration-300">
+                    View My Work
+                </a>
+                <a href="{{ url_for('static', filename='files/Rafli_Damara_CV.pdf') }}" download="Rafli Damara - CV" class="w-full sm:w-auto border border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors duration-300">
+                    Download CV
+                </a>
             </div>
         </div>
     </section>
 
+    <section id="stats" class="py-20 sm:py-24 bg-dark-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-dark-300/50 p-8 rounded-lg border border-transparent hover:border-primary/50 transition-all duration-300">
+                    <p class="text-5xl font-bold text-primary mb-2 counter" data-target="2">0</p>
+                    <p class="text-gray-400">Years of Experience</p>
+                </div>
+                <div class="bg-dark-300/50 p-8 rounded-lg border border-transparent hover:border-primary/50 transition-all duration-300">
+                    <p class="text-5xl font-bold text-primary mb-2 counter" data-target="10">0</p>
+                    <p class="text-gray-400">Completed Projects</p>
+                </div>
+                <div class="bg-dark-300/50 p-8 rounded-lg border border-transparent hover:border-primary/50 transition-all duration-300">
+                    <p class="text-5xl font-bold text-primary mb-2 counter" data-target="3">0</p>
+                    <p class="text-gray-400">Awards Winning</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-20 px-4 bg-dark-200 section-intro">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-center">Work Experience</h2>
-            <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
-            <div class="space-y-12">
-                {% for exp in experience %}
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="md:col-span-1">
-                        <p class="text-gray-400">{{ exp.period }}</p>
+    <section id="skills" class="py-20 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">Tech Stack & Skills</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-12 sm:mb-16"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-dark-200 p-6 rounded-lg space-y-4">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-robot text-2xl text-primary"></i>
+                        <h3 class="text-xl font-semibold text-white">Data Science & AI/ML</h3>
                     </div>
-                    <div class="md:col-span-3">
+                    <div class="flex flex-wrap gap-2">
+                        {% for skill in ['TensorFlow', 'PyTorch', 'Pandas', 'NumPy', 'Scikit-learn', 'R', 'Keras', 'NLP', 'LLMs', 'RAG', 'MLflow', 'Computer Vision'] %}
+                        <span class="bg-dark-300 px-3 py-1 rounded-full text-sm text-gray-300">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="bg-dark-200 p-6 rounded-lg space-y-4">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-code text-2xl text-primary"></i>
+                        <h3 class="text-xl font-semibold text-white">Back End</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        {% for skill in ['Python', 'Flask', 'SQL', 'Django', 'FastAPI'] %}
+                        <span class="bg-dark-300 px-3 py-1 rounded-full text-sm text-gray-300">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="bg-dark-200 p-6 rounded-lg space-y-4">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-laptop-code text-2xl text-primary"></i>
+                        <h3 class="text-xl font-semibold text-white">Front End</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                         {% for skill in ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Streamlit'] %}
+                        <span class="bg-dark-300 px-3 py-1 rounded-full text-sm text-gray-300">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="experience" class="py-20 sm:py-24 bg-dark-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">Work Experience</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-12 sm:mb-16"></div>
+                <div class="relative">
+                    <div class="absolute left-3 w-0.5 h-full bg-gray-700" aria-hidden="true"></div>
+                    {% for exp in experience %}
+                    <div class="relative pl-10 mb-12">
+                        <div class="absolute top-1 left-0 w-6 h-6 bg-dark-300 rounded-full flex items-center justify-center">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-1">{{ exp.period }}</p>
                         <h3 class="text-xl font-bold text-primary">{{ exp.position }}</h3>
-                        <p class="text-lg font-semibold">{{ exp.company }}</p>
-                        <p class="mt-4">{{ exp.description }}</p>
-                        <div class="mt-4 flex flex-wrap gap-2">
+                        <p class="text-lg font-semibold text-gray-300 mb-3">{{ exp.company }}</p>
+                        <p class="text-gray-400 mb-4">{{ exp.description }}</p>
+                        <div class="flex flex-wrap gap-2">
                             {% for tech in exp.technologies %}
-                            <span class="border border-white bg-dark-300 px-3 py-1 rounded-full text-sm">{{ tech }}</span>
+                            <span class="border border-white/20 bg-dark-300 px-3 py-1 rounded-full text-xs text-gray-300">{{ tech }}</span>
                             {% endfor %}
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
+            </div>
+
+            <div id="education">
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">Education</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-12 sm:mb-16"></div>
+                <div class="relative">
+                    <div class="absolute left-3 w-0.5 h-full bg-gray-700" aria-hidden="true"></div>
+                    {% for edu in education %}
+                     <div class="relative pl-10 mb-12">
+                        <div class="absolute top-1 left-0 w-6 h-6 bg-dark-300 rounded-full flex items-center justify-center">
+                            <div class="w-3 h-3 bg-primary rounded-full"></div>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-1">{{ edu.period }}</p>
+                        <h3 class="text-xl font-bold text-primary">{{ edu.degree }}</h3>
+                        <p class="text-lg font-semibold text-gray-300 mb-3">{{ edu.institution }}</p>
+                        <p class="text-gray-400">{{ edu.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 section-intro">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-center">Featured Projects</h2>
-            <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
+    <section id="projects" class="py-20 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">Featured Projects</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-12 sm:mb-16"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {% for project in projects %}
-                <div class="bg-dark-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-48 w-full">
-                        {% if project.thumbnail %}
-                            <img src="{{ url_for('static', filename='img/projects/' + project.thumbnail) }}" 
-                                alt="{{ project.title }}" 
-                                class="h-full w-full object-cover">
-                        {% else %}
-                            <div class="h-full w-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                                <i class="fas fa-image text-5xl text-white"></i>
-                            </div>
-                        {% endif %}
+                <a href="/project/{{ project.id }}" class="group bg-dark-200 rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300">
+                    <div class="overflow-hidden h-48 w-full">
+                        <img src="{{ url_for('static', filename='img/projects/' + project.thumbnail) }}" alt="{{ project.title }}" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-3">{{ project.title }}</h3>
-                        <span class="bg-primary text-white text-xs px-3 py-1 rounded-full">{{ project.category }}</span>
-                        <p class="text-gray-400 mt-5 mb-4">{{ project.description[:150] }}</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            {% for tech in project.technologies %}
-                            <span class="border border-white bg-dark-300 px-2 py-1 rounded-full text-xs">{{ tech }}</span>
+                        <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full">{{ project.category }}</span>
+                        <h3 class="text-xl font-bold mt-3 mb-2 text-white group-hover:text-primary transition-colors">{{ project.title }}</h3>
+                        <p class="text-gray-400 text-sm mb-4">{{ project.description[:100] }}...</p>
+                        <div class="flex flex-wrap gap-2">
+                            {% for tech in project.technologies[:4] %}
+                            <span class="bg-dark-300 px-2 py-1 rounded text-xs text-gray-300">{{ tech }}</span>
                             {% endfor %}
                         </div>
-                        <a href="/project/{{ project.id }}" class="text-primary hover:underline">View Details</a>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
             </div>
             <div class="text-center mt-12">
-                <a href="/projects" class="bg-primary px-6 py-3 rounded-lg font-semibold hover:bg-[#a10072] transition">View All Projects</a>
+                <a href="/projects" class="bg-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/80 transition-colors duration-300">View All Projects</a>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-20 px-4 bg-dark-200 section-intro">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4 text-center">Certifications</h2>
-            <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {% for cert in certifications %}
-                <div class="bg-dark-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="mb-4">
-                        <h3 class="text-xl font-bold text-white mb-3">{{ cert.name }}</h3> 
-                        <span class="text-white text-s rounded-full">{{ cert.issuer }}</span>
+    <section id="contact" class="py-20 sm:py-24 bg-dark-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-center mb-4">Contact Me</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-12 sm:mb-16"></div>
+
+            <div class="grid md:grid-cols-5 gap-16 items-start">
+                <div class="md:col-span-2 space-y-8">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-semibold mb-4 text-primary">Get in Touch</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            I welcome opportunities for discussions, collaborations, and bringing new ideas to life. Feel free to connect with me.
+                        </p>
                     </div>
-                    
-                    <div class="mb-4">
-                        <p class="text-gray-400 text-sm">Issued: {{ cert.date }}</p>
-                        {% if cert.expiration != "No Expiration" %}
-                        <p class="text-gray-400 text-sm">Expires: {{ cert.expiration }}</p>
-                        {% else %}
-                        <p class="text-gray-400 text-sm">No Expiration</p>
-                        {% endif %}
-                    </div>
-                    
-                    
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm text-gray-400">ID: {{ cert.credential_id }}</span>
-                        <a href="{{ cert.credential_url }}" target="_blank" class="text-primary hover:underline text-sm">Verify Credential</a>
+                    <div class="space-y-4">
+                        {% set contacts = [
+                            {'icon': 'fab fa-github', 'name': 'GitHub', 'url': 'https://github.com/Rfldmr', 'handle': 'github.com/Rfldmr'},
+                            {'icon': 'fab fa-linkedin', 'name': 'LinkedIn', 'url': 'https://www.linkedin.com/in/raflidamara/', 'handle': 'linkedin.com/in/raflidamara'},
+                            {'icon': 'fas fa-envelope', 'name': 'Email', 'url': 'mailto:workwithdam@gmail.com', 'handle': 'workwithdam@gmail.com'}
+                        ] %}
+                        {% for contact in contacts %}
+                        <a href="{{ contact.url }}" target="_blank" class="flex items-center group p-2 rounded-lg hover:bg-dark-300/50 transition-colors">
+                            <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
+                                <i class="{{ contact.icon }} text-xl text-gray-200"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-lg text-white group-hover:text-primary transition-colors">{{ contact.name }}</p>
+                                <p class="text-gray-400 text-sm">{{ contact.handle }}</p>
+                            </div>
+                        </a>
+                        {% endfor %}
                     </div>
                 </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
 
-
-  
-  
-<section id="contact" class="py-20 px-4 bg-dark-200 section-intro">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
-        <div class="w-20 h-1 bg-primary mx-auto mb-12"></div>
-
-        <div class="grid md:grid-cols-2 gap-16 items-start">
-            
-            <div class="space-y-8">
-                <div class="md:text-left text-center">   
-                    <h3 class="text-2xl font-semibold mb-4 text-primary">Get in Touch</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        I welcome opportunities for insightful discussions, meaningful collaborations, and bringing new ideas to life. Please feel free to connect with me through the platforms below. I look forward to hearing from you.
-                    </p>
-                </div>
-                
-                <div class="space-y-6">
-                    <a href="https://github.com/Rfldmr" target="_blank" class="flex items-center group">
-                        <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
-                            <i class="fab fa-github text-xl text-gray-200"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-lg group-hover:text-primary transition-colors">GitHub</p>
-                            <p class="text-gray-400">github.com/Rfldmr</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/raflidamara/" target="_blank" class="flex items-center group">
-                        <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
-                            <i class="fab fa-linkedin text-xl text-gray-200"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-lg group-hover:text-primary transition-colors">LinkedIn</p>
-                            <p class="text-gray-400">linkedin.com/in/raflidamara</p>
-                        </div>
-                    </a>
-                    
-                    <a href="mailto:workwithdam@gmail.com" class="flex items-center group">
-                        <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
-                            <i class="fas fa-envelope text-xl text-gray-200"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-lg group-hover:text-primary transition-colors">Email</p>
-                            <p class="text-gray-400">workwithdam@gmail.com</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.kaggle.com/rfldmr" target="_blank" class="flex items-center group">
-                        <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
-                            <i class="fab fa-kaggle text-xl text-gray-200"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-lg group-hover:text-primary transition-colors">Kaggle</p>
-                            <p class="text-gray-400">kaggle.com/rfldmr</p>
-                        </div>
-                    </a>
-
-                    <a href="https://www.instagram.com/raflidmr/" target="_blank" class="flex items-center group">
-                        <div class="bg-dark-300 p-3 rounded-lg mr-4 group-hover:bg-primary transition-colors">
-                            <i class="fab fa-instagram text-xl text-gray-200"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-lg group-hover:text-primary transition-colors">Instagram</p>
-                            <p class="text-gray-400">@raflidmr</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="bg-dark-300 rounded-xl shadow-2xl p-6 h-full flex flex-col">
-                <h3 class="text-2xl font-semibold mb-4 text-primary md:text-left text-center">Chat with Rafli's AI Assistant!</h3>
-                <p class="text-gray-400 mb-6 md:text-left text-center">Curious about me? Ask my AI Assistant. It's trained on my life, work, and general knowledge for the fastest answers.</p>
-                
-                <div class="bg-dark-100 flex-grow rounded-lg p-4 flex flex-col">
-                    <div id="chat-log" class="space-y-4 flex-grow overflow-y-auto pr-6 pt-3" style="max-height: 250px; min-height: 250px;">
-                        <div class="flex justify-start">
-                            <div class="bg-gray-600 text-white p-3 rounded-lg max-w-xs">
-                                <p class="text-sm">Halooo! Aku asisten AI-nya Rafli. Apa ada yang bisa aku bantu? 😁</p>
+                <div class="md:col-span-3 bg-dark-300 rounded-xl shadow-2xl p-6 flex flex-col h-full">
+                    <div class="text-center md:text-left">
+                         <h3 class="text-2xl font-semibold mb-2 text-primary">Chat with My AI Assistant!</h3>
+                         <p class="text-gray-400 mb-6">Ask my AI about my work, skills, or projects for instant answers.</p>
+                    </div>
+                    <div class="bg-dark-100 flex-grow rounded-lg p-4 flex flex-col">
+                        <div id="chat-log" class="space-y-4 flex-grow overflow-y-auto pr-2" style="max-height: 280px; min-height: 280px;">
+                            <div class="flex justify-start">
+                                <div class="bg-gray-600 text-white p-3 rounded-lg max-w-xs">
+                                    <p class="text-sm">Hi! I'm Rafli's AI assistant. How can I help you today? 😁</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mt-8 flex items-center bg-dark-200 border border-gray-600 rounded-full py-1 px-4 transition-colors focus-within:border-primary focus-within:ring-1 focus-within:ring-primary">
-                        <input type="text" id="chat-input" placeholder="Tanyakan sesuatu disini..." class="flex-grow bg-transparent border-none focus:outline-none focus:ring-0 text-gray-200 placeholder-gray-500 px-3">
-                        <button id="send-btn" class="text-primary hover:text-[#a10072] p-2 rounded-full transition-colors">
-                            <i class="fas fa-paper-plane text-xl"></i>
-                        </button>
+                        <div class="mt-4 flex items-center bg-dark-200 border border-gray-600 rounded-full py-1 px-2 transition-colors focus-within:border-primary">
+                            <input type="text" id="chat-input" placeholder="Ask something..." class="flex-grow bg-transparent border-none focus:outline-none focus:ring-0 text-gray-200 placeholder-gray-500 px-3">
+                            <button id="send-btn" class="bg-primary text-white p-2 rounded-full hover:bg-primary/80 transition-colors">
+                                <i class="fas fa-paper-plane text-md"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
-        
-    </div>
-
-    <style>
-      @media (max-width: 767px) {
-        #chat-log {
-          max-height: 350px !important;
-          min-height: 350px !important;
-        }
-      }
-    </style>
-    
-</section>  
+    </section>
 {% endblock %}
